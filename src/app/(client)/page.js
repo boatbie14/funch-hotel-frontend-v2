@@ -1,5 +1,5 @@
 import { generateSeoMetadata } from "@/lib/metadata";
-import HeaderSlider from "@/components/client/HeaderSlider";
+import HeaderSlider from "@/components/client/home/HeaderSlider";
 import YourDestination from "@/components/client/home/YourDestination";
 
 export async function generateMetadata({ searchParams }) {

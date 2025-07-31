@@ -1,3 +1,4 @@
+// src/components/client/home/HeaderSlider.js
 "use client";
 
 import { useState, useEffect } from "react";
@@ -20,7 +21,7 @@ export default function HeaderSlider() {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-screen md:h-[75vh] lg:h-[40vh] lg:min-h-[400px] overflow-hidden">
+    <div className="relative w-full h-screen md:h-[80vh] lg:h-[65vh] lg:min-h-[640px] overflow-hidden">
       {/* Slide Images */}
       {slides.map((slide, index) => (
         <div
@@ -30,17 +31,22 @@ export default function HeaderSlider() {
           style={{ backgroundImage: `url(${slide})` }}
         >
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/50 bg-opacity-40 z-10" />
+          <div className="absolute inset-0 bg-black/40 bg-opacity-40 z-10" />
         </div>
       ))}
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex items-center z-30 px-5">
-        <div className="text-white max-w-4xl pl-5 md:pl-[60px] lg:pl-[100px]">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-[2px_2px_4px_rgba(0,0,0,0.5)]">Funch Hotel</h1>
-          <p className="text-lg md:text-xl font-light leading-relaxed max-w-2xl drop-shadow-[1px_1px_2px_rgba(0,0,0,0.5)]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+      <div className="absolute inset-0 flex items-center z-30">
+        <div className="container">
+          <div className="row">
+            <div className="text-white max-w-4xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">Funch Resorts & Hotels</h1>
+              <p className="text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                โรงแรมหรูหลากหลายสไตล์ที่ตั้งอยู่ในจุดหมายปลายทางยอดนิยมทั่วประเทศไทย ไม่ว่าจะเป็นกรุงเทพ เชียงใหม่ ภูเก็ต หรือยะลา
+                พร้อมบริการระดับพรีเมียมและบรรยากาศที่น่าประทับใจ
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
