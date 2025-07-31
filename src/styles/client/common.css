@@ -1,0 +1,53 @@
+/* Cursor pointer for clickable elements */
+a,
+button {
+  cursor: pointer;
+}
+
+/* Container and Row System */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Optional: Wide container variant */
+.container-wide .row {
+  max-width: 1400px;
+}
+
+/* Optional: Narrow container variant */
+.container-narrow .row {
+  max-width: 960px;
+}
+
+/* Optional: Full width without padding */
+.row-full {
+  padding-left: 0;
+  padding-right: 0;
+}
